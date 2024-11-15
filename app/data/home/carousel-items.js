@@ -2,7 +2,7 @@ const carouselItems = [
     {
         "id": 0,
         "slide_id": "slide1",
-        "backgroundImage": "url(/assets/images/properties/property1.jpg)",
+        "backgroundImage": "url(/A3-NextJS-Project-Live/assets/images/properties/property1.jpg)",
         "title": "",
         "subtitle": "",
         "link": "#",
@@ -11,7 +11,7 @@ const carouselItems = [
     {
         "id": 1,
         "slide_id": "slide2",
-        "backgroundImage": "url(/assets/images/regions/asia/shanghai.jpg)",
+        "backgroundImage": "url(/A3-NextJS-Project-Live/assets/images/regions/asia/shanghai.jpg)",
         "title": "",
         "subtitle": "",
         "link": "#",
