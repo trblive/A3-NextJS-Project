@@ -1,5 +1,6 @@
 // app/pages/news/[id]/page.js
 
+// Import required modules and components
 import React, { use } from "react";
 import Image from "next/image";
 import articles from "@/app/data/articles";
@@ -7,15 +8,36 @@ import shareLinks from "@/app/data/common/share-links";
 import LatestNews from "@/app/components/latest-news-compact";
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { faFileText, faTags, faPencil } from "@fortawesome/free-solid-svg-icons";
+import { faClock, faComments } from "@fortawesome/free-regular-svg-icons";
 
+// Set the runtime environment for this page
 export const runtime = "nodejs";
 
+/**
+ * generateStaticParams
+ *
+ * Generates static parameters for each article based on its ID.
+ * This enables static generation for individual news articles.
+ *
+ * @returns {Array} List of static params for articles
+ */
 export async function generateStaticParams() {
     return articles.map((article) => ({
         id: article.id.toString(),
     }));
 }
 
+/**
+ * NewsArticle Component
+ *
+ * Renders a detailed view of a specific news article based on the article ID.
+ * Includes the article content, images, metadata, share options, comments, and a sidebar.
+ *
+ * @param {Object} props - React props
+ * @param {Object} props.params - Parameters from the route
+ * @returns {JSX.Element} The article detail page structure
+ */
 export default function NewsArticle({ params }) {
 
     const { id } = use(params);
@@ -31,21 +53,28 @@ export default function NewsArticle({ params }) {
 
                             <h1 className="blog-title">{article.title}</h1>
 
+                            {/* Article main image with overlay tag */}
                             <div className="blog-main-image">
-                                <Image src={article.image} alt=""/>
-                                <div className="tag"><FontAwesomeIcon icon="file-text" /></div>
+                                <Image src={article.image} width={720} height={447} alt="" style={{
+                                    width: "100%",
+                                    height: "auto",
+                                    objectFit: "cover"
+                                }}/>
+                                <div className="tag"><FontAwesomeIcon icon={faFileText} /></div>
                             </div>
 
+                            {/* Article metadata */}
                             <div className="blog-bottom-info">
                                 <ul>
-                                    <li><FontAwesomeIcon icon="fa-regular fa-clock" /> {article.date}</li>
-                                    <li><FontAwesomeIcon icon="fa-regular fa-comments" /> {article.comments}</li>
-                                    <li><FontAwesomeIcon icon="tags" /> {article.tags}</li>
+                                    <li><FontAwesomeIcon icon={faClock} /> {article.date}</li>
+                                    <li><FontAwesomeIcon icon={faComments} /> {article.comments}</li>
+                                    <li><FontAwesomeIcon icon={faTags} /> {article.tags}</li>
                                 </ul>
 
-                                <div id="post-author"><FontAwesomeIcon icon="pencil" /> By {article.author}</div>
+                                <div id="post-author"><FontAwesomeIcon icon={faPencil} /> By {article.author}</div>
                             </div>
 
+                            {/* Article content */}
                             <div className="post-content">
                                 <div className="highlight-bold">{article.content}</div>
 
@@ -60,7 +89,11 @@ export default function NewsArticle({ params }) {
                                     mauris convallis, suscipit elementum metus. Vivamus dictum turpis in venenatis
                                     auctor.</p>
 
-                                <Image src={article.image} alt="" className="right"/>
+                                <Image src={article.image} width={300} height={300} alt="" className="right" style={{
+                                    width: "100%",
+                                    height: "auto",
+                                    objectFit: "cover"
+                                }}/>
                                 <p>Vestibulum rhoncus consequat aliquet. Mauris varius posuere mattis. Duis vitae
                                     molestie
                                     arcu. Curabitur sollicitudin, velit ut eleifend auctor, nibh orci pharetra risus, a
@@ -114,30 +147,12 @@ export default function NewsArticle({ params }) {
                                     risus</p>
                             </div>
 
-                            <div className="share-wrapper col-sm-12 clearfix">
-                                <h5>Share this Post:</h5>
-                                <ul className="social-networks">
-                                    {shareLinks.map((item) => (
-                                        <li key={item.id}>
-                                            <a href={item.link}>
-                                                <FontAwesomeIcon icon={[item.iconPack, item.name]} />
-                                                <span className="sr-only">{item.screenreaderText}</span>
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-
-                                <a className="print-button" href="javascript:window.print();">
-                                    <i className="fa fa-print"></i>
-                                </a>
-                            </div>
-
+                            {/* Comments section */}
                             <h1 className="section-title">Comments</h1>
-
                             <div className="comments">
                                 <ul>
                                     <li>
-                                        <Image src="/assets/images/comment-man.jpg" alt=""/>
+                                        <Image width={100} height={100} src="/assets/images/comment-man.jpg" alt=""/>
                                         <div className="comment">
                                             <a href="#" className="btn btn-default-color">Reply</a>
                                             <h3>John Doe<small>30 July, 2014</small></h3>
@@ -150,7 +165,7 @@ export default function NewsArticle({ params }) {
                                         </div>
                                         <ul>
                                             <li>
-                                                <Image src="/assets/images/comment-man.jpg" alt=""/>
+                                                <Image width={100} height={100} src="/assets/images/comment-man.jpg" alt=""/>
                                                 <div className="comment">
                                                     <a href="#" className="btn btn-default-color">Reply</a>
                                                     <h3>John Doe<small>30 July, 2014</small></h3>
@@ -163,7 +178,8 @@ export default function NewsArticle({ params }) {
                                         </ul>
                                     </li>
                                     <li>
-                                        <Image src="/assets/images/comment-woman.jpg" alt=""/>
+                                        <Image width={100} height={100}
+                                               src="/assets/images/comment-woman.jpg" alt=""/>
                                         <div className="comment">
                                             <a href="#" className="btn btn-default-color">Reply</a>
                                             <h3>Mary Doe<small>31 July, 2014</small></h3>
@@ -210,6 +226,7 @@ export default function NewsArticle({ params }) {
                             </div>
                         </div>
 
+                        {/* Sidebar */}
                         <div className="sidebar gray col-sm-4">
                             <h2 className="section-title">Categories</h2>
                             <ul className="categories">
