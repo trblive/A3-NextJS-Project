@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -46,7 +47,11 @@ const Header = () => {
                     <div className="row">
                         <div className="col-sm-12">
                             <Link href="/" className="nav-logo">
-                                <img src="/assets/images/logo.png" alt="One Ring Rentals"/>
+                                <Image
+                                    src="/assets/images/logo.png"
+                                    width={187}
+                                    height={85}
+                                    alt="One Ring Rentals"/>
                             </Link>
 
                             <div id="sb-search" className="sb-search">

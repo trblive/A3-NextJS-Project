@@ -2,22 +2,22 @@
 
 @font-face {
   font-family: "cozy-real-estate";
-  src:url("../assets/fonts/cozy-real-estate.eot");
-  src:url("../assets/fonts/cozy-real-estate.eot?#iefix") format("embedded-opentype"),
-    url("../assets/fonts/cozy-real-estate.woff") format("woff"),
-    url("../assets/fonts/cozy-real-estate.ttf") format("truetype"),
-    url("../assets/fonts/cozy-real-estate.svg#cozy-real-estate") format("svg");
+  src:url("../../public/assets/fonts/cozy-real-estate.eot");
+  src:url("../../public/assets/fonts/cozy-real-estate.eot?#iefix") format("embedded-opentype"),
+    url("../../public/assets/fonts/cozy-real-estate.woff") format("woff"),
+    url("../../public/assets/fonts/cozy-real-estate.ttf") format("truetype"),
+    url("../../public/assets/fonts/cozy-real-estate.svg#cozy-real-estate") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: FontAwesome;
-  src: url("../assets/fonts/fontawesome-webfont.eot");
-  src: url("../assets/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
-  url("../assets/fonts/fontawesome-webfont.woff") format("woff"),
-  url("../assets/fonts/fontawesome-webfont.ttf") format("ttf"),
-  url("../assets/fonts/fontawesome-webfont.svg") format("svg");
+  src: url("../../public/assets/fonts/fontawesome-webfont.eot");
+  src: url("../../public/assets/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
+  url("../../public/assets/fonts/fontawesome-webfont.woff") format("woff"),
+  url("../../public/assets/fonts/fontawesome-webfont.ttf") format("ttf"),
+  url("../../public/assets/fonts/fontawesome-webfont.svg") format("svg");
 }
 
 [data-icon]:before {

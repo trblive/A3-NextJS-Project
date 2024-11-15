@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import regions from "../data/regions";
 
 const RegionGrid = ({ regionName }) => {
@@ -16,7 +17,7 @@ const RegionGrid = ({ regionName }) => {
                                 <h3>{city.city}</h3>
                                 <span className="location">{city.state ? city.state : city.country}</span>
                             </a>
-                            <img src={city.image} alt=""/>
+                            <Image src={city.image} width={300} height={300} alt=""/>
                         </div>
                     </div>
                 ))}

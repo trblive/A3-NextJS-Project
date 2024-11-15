@@ -1,6 +1,7 @@
 import React from "react";
 import articles from "../data/articles";
 import Link from "next/link";
+import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight, faFileText, faUser } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
@@ -18,7 +19,7 @@ const Articles = () => {
                                 Read More <FontAwesomeIcon icon={faChevronRight} />
                             </span>
                         </Link>
-                        <img src={item.image} alt=""/>
+                        <Image src={item.image} alt="" width={300} height={300}/>
                     </div>
                     <div className="tag"><FontAwesomeIcon icon={faFileText} /></div>
                     <div className="info-blog">

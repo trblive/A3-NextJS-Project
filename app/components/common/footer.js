@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react";
+import Image from 'next/image'
 import footerLinks from "../../data/common/footer-links";
 import popularRegions from "../../data/common/popular-regions";
 import socialNetworks from "../../data/common/social-networks";
@@ -14,7 +15,7 @@ const Footer = () => {
 
                 <div className="row">
                     <div className="block col-sm-3">
-                        <a href="#"><img src="/assets/images/logo.png" alt="One Ring Rentals"/></a>
+                        <a href="#"><Image src="/assets/images/logo.png" width={187} height={85} alt="One Ring Rentals"/></a>
                         <br/><br/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo eros nibh, et dictum
                             elit tincidunt eget. Pellentesque volutpat quam dignissim, convallis elit id, efficitur sem.
@@ -41,7 +42,11 @@ const Footer = () => {
                                         <li key={item.id}>
                                             <div className="image">
                                                 <a href={item.link}>
-                                                    <img src={item.image} alt=""/>
+                                                    <Image
+                                                        src={item.image}
+                                                        width={100}
+                                                        height={100}
+                                                        alt=""/>
                                                 </a>
                                             </div>
                                             <a href={item.link}>{item.name}</a>
@@ -55,7 +60,10 @@ const Footer = () => {
                                         <li key={item.id}>
                                             <div className="image">
                                                 <a href={item.link}>
-                                                    <img src={item.image} alt=""/>
+                                                    <Image src={item.image}
+                                                           width={100}
+                                                           height={100}
+                                                           alt=""/>
                                                 </a>
                                             </div>
                                             <a href={item.link}>{item.name}</a>

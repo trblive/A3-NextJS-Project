@@ -1,14 +1,20 @@
 // app/pages/news/[id]/page.js
-"use client"
 
 import React, { use } from "react";
+import Image from "next/image";
 import articles from "@/app/data/articles";
 import shareLinks from "@/app/data/common/share-links";
 import LatestNews from "@/app/components/latest-news-compact";
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
+
+export async function generateStaticParams() {
+    return articles.map((article) => ({
+        id: article.id.toString(),
+    }));
+}
 
 export default function NewsArticle({ params }) {
 
@@ -26,7 +32,7 @@ export default function NewsArticle({ params }) {
                             <h1 className="blog-title">{article.title}</h1>
 
                             <div className="blog-main-image">
-                                <img src={article.image} alt=""/>
+                                <Image src={article.image} alt=""/>
                                 <div className="tag"><FontAwesomeIcon icon="file-text" /></div>
                             </div>
 
@@ -54,7 +60,7 @@ export default function NewsArticle({ params }) {
                                     mauris convallis, suscipit elementum metus. Vivamus dictum turpis in venenatis
                                     auctor.</p>
 
-                                <img src={article.image} alt="" className="right"/>
+                                <Image src={article.image} alt="" className="right"/>
                                 <p>Vestibulum rhoncus consequat aliquet. Mauris varius posuere mattis. Duis vitae
                                     molestie
                                     arcu. Curabitur sollicitudin, velit ut eleifend auctor, nibh orci pharetra risus, a
@@ -131,7 +137,7 @@ export default function NewsArticle({ params }) {
                             <div className="comments">
                                 <ul>
                                     <li>
-                                        <img src="/assets/images/comment-man.jpg" alt=""/>
+                                        <Image src="/assets/images/comment-man.jpg" alt=""/>
                                         <div className="comment">
                                             <a href="#" className="btn btn-default-color">Reply</a>
                                             <h3>John Doe<small>30 July, 2014</small></h3>
@@ -144,7 +150,7 @@ export default function NewsArticle({ params }) {
                                         </div>
                                         <ul>
                                             <li>
-                                                <img src="/assets/images/comment-man.jpg" alt=""/>
+                                                <Image src="/assets/images/comment-man.jpg" alt=""/>
                                                 <div className="comment">
                                                     <a href="#" className="btn btn-default-color">Reply</a>
                                                     <h3>John Doe<small>30 July, 2014</small></h3>
@@ -157,7 +163,7 @@ export default function NewsArticle({ params }) {
                                         </ul>
                                     </li>
                                     <li>
-                                        <img src="/assets/images/comment-woman.jpg" alt=""/>
+                                        <Image src="/assets/images/comment-woman.jpg" alt=""/>
                                         <div className="comment">
                                             <a href="#" className="btn btn-default-color">Reply</a>
                                             <h3>Mary Doe<small>31 July, 2014</small></h3>

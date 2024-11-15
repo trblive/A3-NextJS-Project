@@ -1,5 +1,6 @@
 import React from "react";
 import properties from "../../data/home/properties";
+import Image from 'next/image'
 
 const FeaturedProperties = () => {
     return (
@@ -12,7 +13,7 @@ const FeaturedProperties = () => {
                             <h3>{ item.title }</h3>
                             <span className="location">{ item.location }</span>
                         </a>
-                        <img src={ item.image } alt=""/>
+                        <Image src={ item.image } width={300} height={300} alt=""/>
                     </div>
                     <div className="price">
                         <span>${ item.price }</span>

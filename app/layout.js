@@ -1,8 +1,16 @@
 // app/layout.js
 "use client"
 
-import './lib/fontawesome.js'
+import "./styles/bootstrap.css";
+import "./styles/bootstrap-datepicker.css";
+import "./styles/font.css";
+import "./styles/owl.transitions.css";
+import "./styles/style.css"
+
+import "./lib/fontawesome.js";
+
 import React from "react";
+import Script from 'next/script'
 
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
@@ -18,10 +26,10 @@ export default function RootLayout({ children }) {
             <meta charSet="utf-8"/>
             <title>One Ring Rentals</title>
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-            <link href="http://fonts.googleapis.com/css?family=Raleway:300,500,900%7COpen+Sans:400,700,400italic"
+            <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,900%7COpen+Sans:400,700,400italic&display=optional"
                   rel="stylesheet" type="text/css"/>
-            <link href="/styles/bootstrap.min.css" rel="stylesheet"/>
-            <link href="/styles/style.css" rel="stylesheet"/>
+            {/*<link href="/app/styles/bootstrap.min.css" rel="stylesheet"/>*/}
+            {/*<link href="/app/styles/style.css" rel="stylesheet"/>*/}
         </head>
 
         <body>
@@ -30,14 +38,14 @@ export default function RootLayout({ children }) {
             {children}
             <Footer/>
 
-            <script src="/js/common.js"></script>
-            <script src="/js/common/bootstrap.min.js"></script>
-            <script src="/js/common/bootstrap-datepicker.js"></script>
-            <script src="/js/common/chosen.min.js"></script>
-            <script src="/js/common/bootstrap-checkbox.js"></script>
-            <script src="/js/common/nice-scroll.js"></script>
-            <script src="/js/common/jquery-browser.js"></script>
-            <script src="/js/scripts.js"></script>
+            <Script src="/js/common.js"></Script>
+            <Script src="/js/common/bootstrap.min.js"></Script>
+            <Script src="/js/common/bootstrap-datepicker.js"></Script>
+            <Script src="/js/common/chosen.min.js"></Script>
+            <Script src="/js/common/bootstrap-checkbox.js"></Script>
+            <Script src="/js/common/nice-scroll.js"></Script>
+            <Script src="/js/common/jquery-browser.js"></Script>
+            <Script src="/js/scripts.js"></Script>
         </div>
         </body>
         </html>

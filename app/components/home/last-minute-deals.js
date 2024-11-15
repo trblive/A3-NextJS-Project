@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 import deals from "../../data/home/deals";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faCalendar } from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +11,7 @@ const LastMinuteDeals = () => {
                 <li key={item.id} className="col-md-12">
                     <div className="image">
                         <a href={item.link}></a>
-                        <img alt="" src={item.image}/>
+                        <Image alt="" src={item.image} width={100} height={100}/>
                     </div>
 
                     <ul className="top-info">

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 import articles from "../../data/articles";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faChevronRight, faFileText, faCalendar, faTags } from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +16,7 @@ const RecentArticles = () => {
                                 Read More <FontAwesomeIcon icon={faChevronRight} />
                             </span>
                         </a>
-                        <img src={item.image} alt=""/>
+                        <Image src={item.image} alt="" width={300} height={300}/>
                     </div>
 
                     <div className="tag"><FontAwesomeIcon icon={faFileText} /></div>

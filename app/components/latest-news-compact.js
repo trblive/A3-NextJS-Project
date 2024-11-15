@@ -1,6 +1,7 @@
 import React from "react";
 import articles from "../data/articles";
 import Link from "next/link";
+import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faClock } from "@fortawesome/free-regular-svg-icons";
 
@@ -11,7 +12,7 @@ export default function LatestNews() {
                 <li key={item.id} className="col-md-12">
                     <div className="image">
                         <Link href={`/news/${encodeURIComponent(item.id)}`}></Link>
-                        <img src={item.image} alt=""/>
+                        <Image src={item.image} width={100} height={100} alt=""/>
                     </div>
 
                     <ul className="top-info">
