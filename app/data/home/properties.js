@@ -6,10 +6,10 @@ const properties = [
 		"location": "Upper East Side, New York",
 		"latitude":40.727815,
 		"longitude":-73.993544,
-		"image":"/assets/images/properties/property0.jpg",
+		"image":"/A3-NextJS-Project-Live/assets/images/properties/property0.jpg",
 		"description":"Lafayette St New York, NY <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-residential.png",
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-residential.png",
 		"bed": 4,
 		"bath": 2,
 		"price": 950,
@@ -20,10 +20,10 @@ const properties = [
 		"location": "Miami Beach, Florida",
 		"latitude": 25.791758,
 		"longitude": -80.140058,
-		"image": "/assets/images/properties/property1.jpg",
+		"image": "/A3-NextJS-Project-Live/assets/images/properties/property1.jpg",
 		"description": "Lenox Ave, Miami Beach, FL <br> Phone: (123) 546-7890",
 		"link": "property-details.html",
-		"map_marker_icon": "/assets/images/markers/coral-marker-residential.png",
+		"map_marker_icon": "/A3-NextJS-Project-Live/assets/images/markers/coral-marker-residential.png",
 		"bed": 5,
 		"bath": 2,
 		"price": 1300,
@@ -34,10 +34,10 @@ const properties = [
 		"location": "East Village, New York",
 		"latitude": 40.728645,
 		"longitude": -73.987860,
-		"image":"/assets/images/properties/property2.jpg",
+		"image":"/A3-NextJS-Project-Live/assets/images/properties/property2.jpg",
 		"description":"St Marks Pl, New York, NY <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-commercial.png",
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-commercial.png",
 		"bed": 3,
 		"bath": 2,
 		"price": 560,
@@ -48,10 +48,10 @@ const properties = [
 		"location": "Midtown, New York",
 		"latitude": 40.44097,
 		"longitude": -73.59205,
-		"image":"/assets/images/properties/property3.jpg",
+		"image":"/A3-NextJS-Project-Live/assets/images/properties/property3.jpg",
 		"description":"Union Square, New York, NY <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-residential.png",
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-residential.png",
 		"bed": 1,
 		"bath": 2,
 		"price": 85,
@@ -62,10 +62,10 @@ const properties = [
 		"location": "Cobble Hill, New York",
 		"latitude": 40.729930,
 		"longitude": -73.992967,
-		"image":"/assets/images/properties/property4.jpeg",
+		"image":"/A3-NextJS-Project-Live/assets/images/properties/property4.jpeg",
 		"description":"Brooklyn, New York, NY <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-residential.png",
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-residential.png",
 		"bed": 2,
 		"bath": 2,
 		"price": 840,
@@ -76,10 +76,10 @@ const properties = [
 		"location": "Bal Harbour, Florida",
 		"latitude":25.791419,
 		"longitude": -80.131935,
-		"image":"/assets/images/properties/property5.jpg",
+		"image":"/A3-NextJS-Project-Live/assets/images/properties/property5.jpg",
 		"description":"Collins Ave, Miami Beach, FL <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-commercial.png",
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-commercial.png",
 		"bed": 3,
 		"bath": 2,
 		"price": 150,
@@ -92,7 +92,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"2nd Ave, New York, NY <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-commercial.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-commercial.png"
 	},
 
 	{
@@ -103,7 +103,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"Convention Center Dr, Miami Beach, FL <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-commercial.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-commercial.png"
 	},
 	{
 		"id": 9,
@@ -113,7 +113,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"Uintah St, Colorado Springs, CO <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-land.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-land.png"
 	},
 	{
 		"id": 10,
@@ -123,7 +123,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"Swope Ave, Colorado Springs, CO <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-residential.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-residential.png"
 	},
 	{
 		"id": 11,
@@ -133,7 +133,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"Bush St, San Francisco, CA <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-residential.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-residential.png"
 	},
 	{
 		"id": 12,
@@ -143,7 +143,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"Kearny St, San Francisco, CA <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-commercial.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-commercial.png"
 	},
 	{
 		"id": 13,
@@ -153,7 +153,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"Sacramento St, San Francisco, CA <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-commercial.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-commercial.png"
 	},
 	{
 		"id": 14,
@@ -163,7 +163,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"Sacramento St, San Francisco, CA <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-residential.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-residential.png"
 	},
 	{
 		"id": 15,
@@ -173,7 +173,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"California St, San Francisco, CA <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-residential.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-residential.png"
 	},
 	{
 		"id": 16,
@@ -183,7 +183,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"11th Ave S, Nashville, TN <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-land.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-land.png"
 	},
 	{
 		"id": 17,
@@ -193,7 +193,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"Horton Ave, Nashville, TN <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-residential.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-residential.png"
 	},
 	{
 		"id": 18,
@@ -203,7 +203,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"Dolorosa, San Antonio, TX <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-commercial.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-commercial.png"
 	},
 	{
 		"id": 19,
@@ -213,7 +213,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"Central Ave, Phoenix, AZ <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-land.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-land.png"
 	},
 	{
 		"id": 20,
@@ -223,7 +223,7 @@ const properties = [
 		"image":"http://placehold.it/760x670",
 		"description":"12th St, Kansas City, MO <br> Phone: (123) 546-7890",
 		"link": "",
-		"map_marker_icon":"/assets/images/markers/coral-marker-residential.png"
+		"map_marker_icon":"/A3-NextJS-Project-Live/assets/images/markers/coral-marker-residential.png"
 	}
 ];
 

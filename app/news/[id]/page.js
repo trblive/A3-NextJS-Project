@@ -137,7 +137,7 @@ export default function NewsArticle({ params }) {
                             <div className="comments">
                                 <ul>
                                     <li>
-                                        <Image src="/assets/images/comment-man.jpg" alt=""/>
+                                        <Image src="/A3-NextJS-Project-Live/assets/images/comment-man.jpg" alt=""/>
                                         <div className="comment">
                                             <a href="#" className="btn btn-default-color">Reply</a>
                                             <h3>John Doe<small>30 July, 2014</small></h3>
@@ -150,7 +150,7 @@ export default function NewsArticle({ params }) {
                                         </div>
                                         <ul>
                                             <li>
-                                                <Image src="/assets/images/comment-man.jpg" alt=""/>
+                                                <Image src="/A3-NextJS-Project-Live/assets/images/comment-man.jpg" alt=""/>
                                                 <div className="comment">
                                                     <a href="#" className="btn btn-default-color">Reply</a>
                                                     <h3>John Doe<small>30 July, 2014</small></h3>
@@ -163,7 +163,7 @@ export default function NewsArticle({ params }) {
                                         </ul>
                                     </li>
                                     <li>
-                                        <Image src="/assets/images/comment-woman.jpg" alt=""/>
+                                        <Image src="/A3-NextJS-Project-Live/assets/images/comment-woman.jpg" alt=""/>
                                         <div className="comment">
                                             <a href="#" className="btn btn-default-color">Reply</a>
                                             <h3>Mary Doe<small>31 July, 2014</small></h3>

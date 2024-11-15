@@ -38,14 +38,14 @@ export default function RootLayout({ children }) {
             {children}
             <Footer/>
 
-            <Script src="/js/common.js"></Script>
-            <Script src="/js/common/bootstrap.min.js"></Script>
-            <Script src="/js/common/bootstrap-datepicker.js"></Script>
-            <Script src="/js/common/chosen.min.js"></Script>
-            <Script src="/js/common/bootstrap-checkbox.js"></Script>
-            <Script src="/js/common/nice-scroll.js"></Script>
-            <Script src="/js/common/jquery-browser.js"></Script>
-            <Script src="/js/scripts.js"></Script>
+            <Script src="/A3-NextJS-Project-Live/js/common.js"></Script>
+            <Script src="/A3-NextJS-Project-Live/js/common/bootstrap.min.js"></Script>
+            <Script src="/A3-NextJS-Project-Live/js/common/bootstrap-datepicker.js"></Script>
+            <Script src="/A3-NextJS-Project-Live/js/common/chosen.min.js"></Script>
+            <Script src="/A3-NextJS-Project-Live/js/common/bootstrap-checkbox.js"></Script>
+            <Script src="/A3-NextJS-Project-Live/js/common/nice-scroll.js"></Script>
+            <Script src="/A3-NextJS-Project-Live/js/common/jquery-browser.js"></Script>
+            <Script src="/A3-NextJS-Project-Live/js/scripts.js"></Script>
         </div>
         </body>
         </html>

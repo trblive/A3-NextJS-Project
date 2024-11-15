@@ -15,7 +15,7 @@ const Footer = () => {
 
                 <div className="row">
                     <div className="block col-sm-3">
-                        <a href="#"><Image src="/assets/images/logo.png" width={187} height={85} alt="One Ring Rentals"/></a>
+                        <a href="#"><Image src="/A3-NextJS-Project-Live/assets/images/logo.png" width={187} height={85} alt="One Ring Rentals"/></a>
                         <br/><br/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo eros nibh, et dictum
                             elit tincidunt eget. Pellentesque volutpat quam dignissim, convallis elit id, efficitur sem.

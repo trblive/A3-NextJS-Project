@@ -48,7 +48,7 @@ const Header = () => {
                         <div className="col-sm-12">
                             <Link href="/" className="nav-logo">
                                 <Image
-                                    src="/assets/images/logo.png"
+                                    src="/A3-NextJS-Project-Live/assets/images/logo.png"
                                     width={187}
                                     height={85}
                                     alt="One Ring Rentals"/>

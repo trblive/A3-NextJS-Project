@@ -6,7 +6,7 @@ const activity = [
         topic: "The House With No Windows",
         content: "Awesome solitary confinement, mate. Spot on. Sweet as.",
         time: "Just now",
-        image: "/assets/images/comment-man.jpg",
+        image: "/A3-NextJS-Project-Live/assets/images/comment-man.jpg",
         link: "",
     },
     {
@@ -16,7 +16,7 @@ const activity = [
         topic: "The Mistake by the Lake",
         content: "Has this house been unit tested?",
         time: "37 minutes ago",
-        image: "/assets/images/comment-man.jpg",
+        image: "/A3-NextJS-Project-Live/assets/images/comment-man.jpg",
         link: "",
     }
 ]

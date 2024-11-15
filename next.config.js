@@ -1,12 +1,9 @@
-const isProd = process.env.NODE_ENV === 'production';
-const nextConfig = {
+module.exports = {
     reactStrictMode: true,
     images: {
         unoptimized: true, // Disable default image optimization
     },
-    assetPrefix: isProd ? '/your-repository-name/' : '',
-    basePath: isProd ? '/your-repository-name' : '',
+    assetPrefix: '/A3-NextJS-Project-Live/',
+    basePath: '/A3-NextJS-Project-Live',
     output: 'export'
 };
-
-export default nextConfig;

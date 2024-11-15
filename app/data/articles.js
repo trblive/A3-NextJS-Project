@@ -7,7 +7,7 @@ const articles = [
         date: "2024-011-14",
         comments: 2,
         tags: "Properties, Prices, best deals",
-        image: "/assets/images/news/article0.jpg",
+        image: "/A3-NextJS-Project-Live/assets/images/news/article0.jpg",
         link: ""
     },
     {
@@ -18,7 +18,7 @@ const articles = [
         date: "2024-011-13",
         comments: 4,
         tags: "Tips, Mortgage",
-        image: "/assets/images/news/article1.jpg",
+        image: "/A3-NextJS-Project-Live/assets/images/news/article1.jpg",
         link: ""
     },
     {
@@ -29,7 +29,7 @@ const articles = [
         date: "2024-011-12",
         comments: 1,
         tags: "Location, Price, House",
-        image: "/assets/images/news/article2.jpg",
+        image: "/A3-NextJS-Project-Live/assets/images/news/article2.jpg",
         link: ""
     },
     {
@@ -40,7 +40,7 @@ const articles = [
         date: "2024-08-08",
         comments: 0,
         tags: "",
-        image: "/assets/images/news/article3.avif",
+        image: "/A3-NextJS-Project-Live/assets/images/news/article3.avif",
         link: ""
     },
     {
@@ -51,7 +51,7 @@ const articles = [
         date: "2024-08-07",
         comments: 0,
         tags: "",
-        image: "/assets/images/news/article4.jpg",
+        image: "/A3-NextJS-Project-Live/assets/images/news/article4.jpg",
         link: ""
     },
     {
@@ -62,7 +62,7 @@ const articles = [
         date: "2024-08-06",
         comments: 0,
         tags: "",
-        image: "/assets/images/news/article5.jpg",
+        image: "/A3-NextJS-Project-Live/assets/images/news/article5.jpg",
         link: ""
     },
 ]
